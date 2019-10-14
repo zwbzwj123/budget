@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/price?useSSL=false&serverTimezone=UTC
+    username: root
+    password: zwbzwj123
+  jpa:
+    database: MySQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2KB
+      max-file-size: 200MB
+      max-request-size: 215MB
+
